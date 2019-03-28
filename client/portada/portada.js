@@ -13,6 +13,12 @@ ventanas.updateUrl()
 Template.portada.events({
   'animationend #logo' () {
     ventanas.close('portada')
+    if (ventanas.conf('seccion')) {
+      return ventanas.insert({
+        _id: 'seccion',
+        seccion: ventanas.conf('seccion')
+      })
+    }
     ventanas.insert({ _id: 'menu' })
   }
 })

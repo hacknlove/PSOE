@@ -1,3 +1,6 @@
+body {
+  min-height: 100vh;
+}
 #ventanas {
   --rojo: var(--color-error);
   font-family: var(--textos);
@@ -782,7 +785,8 @@ button {
 
 #ventanas>.lista {
   max-width: 750px;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   &.editar {
     z-index: 1001;
   }
@@ -797,22 +801,16 @@ button {
   flex-direction: column;
   align-items: center;
   &>div.ribbon.ventana {
+    margin: 0;
     &:first-child {
-      position: fixed;
-      top: 0;
       z-index: 1;
-      margin: 0 25px 25px;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       padding-top: 0px;
       transition: padding-top .3s ease-out;
     }
     &:last-child {
-      position: fixed;
-      bottom: 0;
       z-index: 1;
-      margin-top: 20px;
-      margin-bottom: 0;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -820,10 +818,18 @@ button {
     color: var(--color-fondo);
     background: var(--color-basico-f25);
     .cabecero {
-      justify-content: flex-start;
       span {
-        font-family: 'Roboto';
+        font-family: 'Overpass';
         text-transform: none;
+        display: flex;
+        align-items: center;
+        font-size: 115%;
+        line-height: 20px;
+        font-weight: 900;
+        span {
+          position: relative;
+          top: 2px;
+        }
       }
     }
     .cuerpo {
@@ -836,10 +842,15 @@ button {
   }
   &>.contenido {
     flex-grow: 1;
+    flex-shrink: 1;
+    height: 100%;
+    overflow-y: auto;
     background: var(--color-tinta-f5);
-    padding-top: 100px;
-    padding-bottom: 100px;
     max-width: 750px;
     width: 100%;
   }
+}
+
+.close, .openWindow {
+  cursor: pointer;
 }

@@ -3,7 +3,7 @@ body {
   --textos:Roboto Slab;
   --titulos:Overpass;
   --etiquetas:Roboto;
-  --border-radius:4px;
+  --border-radius:0;
   --color-basico:#c10000;
   --color-basico-l1:hsl(0, 100%, 56.9%);
   --color-basico-l25:hsl(0, 100%, 64.7%);

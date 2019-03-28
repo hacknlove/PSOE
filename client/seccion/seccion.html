@@ -1,0 +1,39 @@
+<template name="seccion">
+  <div class="fade lista">
+    <div class="ribbon ventana">
+      <div class="cabecero">
+        <span>
+          <img class="close openWindow" data-_id="menu" src="/PSOECORAZON.png"> <span> {{titulo}}</span>
+        </span>
+        <i class="fas fa-share-alt"></i>
+      </div>
+    </div>
+      <div class="contenido botoneraVertical">
+          {{#each propuesta in propuestas}}
+            {{> vistaPrevia propuesta}}
+          {{/each}}
+      </div>
+    <div class="crecer"></div>
+    <div class="ribbon ventana crecer">
+      <div class="botonera">
+        https://github.com/hacknlove/PSOE
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="vistaPrevia">
+  <div class="ventana vistaPrevia">
+    <div class="cabecero">
+      {{vistaPrevia.titulo}}
+    </div>
+    <div class="cuerpo">
+      <div class="youtube">
+        <iframe src="https://www.youtube.com/embed/O6JxZxIzRGc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="descripcion">
+        {{{vistaPrevia.descripcion}}}
+      </div>
+    </div>
+  </div>
+</template>

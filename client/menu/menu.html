@@ -2,29 +2,20 @@
   <div class="fade lista">
     <div class="ribbon ventana">
       <div class="cabecero">
-        <img src="/PSOECORAZON.png">
+        <img class="close openWindow" data-_id="portada" src="/PSOECORAZON.png">
+        <i class="fas fa-share-alt"></i>
       </div>
     </div>
       <div class="contenido botoneraVertical">
-          {{#each elemento in datos.menu}}
-          <button>{{elemento}}</button>
+          {{#each elemento in menu}}
+          <button class="close openWindow" data-_id="seccion" data-seccion="{{elemento.seccion}}">{{elemento.titulo}}</button>
           {{/each}}
       </div>
     <div class="crecer"></div>
     <div class="ribbon ventana crecer">
       <div class="botonera">
+        {{datos.secciones.[0]}}
       </div>
-    </div>
-  </div>
-</template>
-
-<template name="fichaUsuario">
-  <div class="ventana">
-    <div class="cuerpo">
-      {{correo}} - {{pagina}} <br>
-      {{#each item in items}}
-        {{item.nombre}}
-      {{/each}}
     </div>
   </div>
 </template>

@@ -1,33 +1,192 @@
 {
-  "menu": [
-    "CALIDAD DEMOCRTATICA",
-    "IGUALDAD EN LA DIVERSIDAD",
-    "ECONOMIA Y BIENESTAR",
-    "UNA COMUNIDAD HABITABLE",
-    "CULTURA COMO COHESIÓN",
-    "MADRID DEL CONOCIMIENTO",
-    "SERVICIOS PUBLICOS",
-    "ADMINISTRACION EFICIENTE",
-    "MADRID INTERNACIONAL",
-    "MULTIPLES MUNICIPIOS"
-  ],
-  "secciones": [
-    "democracia",
-    "igualdad",
-    "economia",
-    "comunidad",
-    "cultura",
-    "conocimiento",
-    "servicios",
-    "administracion",
-    "internacional",
-    "municipios"
-  ],
+  "menu": {
+    "democracia": "CALIDAD DEMOCRTATICA",
+    "igualdad": "IGUALDAD EN LA DIVERSIDAD",
+    "economia": "ECONOMIA Y BIENESTAR",
+    "comunidad": "UNA COMUNIDAD HABITABLE",
+    "cultura": "CULTURA COMO COHESIÓN",
+    "conocimiento": "MADRID DEL CONOCIMIENTO",
+    "servicios": "SERVICIOS PUBLICOS",
+    "administracion": "ADMINISTRACION EFICIENTE",
+    "internacional": "MADRID INTERNACIONAL",
+    "municipios": "MULTIPLES MUNICIPIOS"
+  },
   "democracia": [
     {
-      "titulo": "Aqui va el titulo",
-      "descripcion": "Aqui la breve descripcion",
-      "video": "O6JxZxIzRGc"
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
+    },
+    {
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
+    },
+    {
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
+    },
+    {
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
+    },
+    {
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
+    },
+    {
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
+    },
+    {
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
+    },
+    {
+      "vistaPrevia": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "situacion": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "propuesta": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      },
+      "impacto": {
+        "titulo": "Aqui va el titulo",
+        "descripcion": "Aqui la breve descripcion",
+        "video": "O6JxZxIzRGc"
+      }
     }
   ]
 }
