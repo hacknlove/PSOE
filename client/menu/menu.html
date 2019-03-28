@@ -1,0 +1,30 @@
+<template name="menu">
+  <div class="fade lista">
+    <div class="ribbon ventana">
+      <div class="cabecero">
+        <img src="/PSOECORAZON.png">
+      </div>
+    </div>
+      <div class="contenido botoneraVertical">
+          {{#each elemento in datos.menu}}
+          <button>{{elemento}}</button>
+          {{/each}}
+      </div>
+    <div class="crecer"></div>
+    <div class="ribbon ventana crecer">
+      <div class="botonera">
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="fichaUsuario">
+  <div class="ventana">
+    <div class="cuerpo">
+      {{correo}} - {{pagina}} <br>
+      {{#each item in items}}
+        {{item.nombre}}
+      {{/each}}
+    </div>
+  </div>
+</template>

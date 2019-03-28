@@ -781,6 +781,8 @@ button {
 }
 
 #ventanas>.lista {
+  max-width: 750px;
+  width: 100%;
   &.editar {
     z-index: 1001;
   }
@@ -789,15 +791,16 @@ button {
     pointer-events: all;
   }
   box-sizing: border-box;
-  max-height: 100vh;
   min-height: 100vh;
-  width: 100vw;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   &>div.ribbon.ventana {
     &:first-child {
+      position: fixed;
+      top: 0;
+      z-index: 1;
       margin: 0 25px 25px;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -805,13 +808,17 @@ button {
       transition: padding-top .3s ease-out;
     }
     &:last-child {
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
       margin-top: 20px;
       margin-bottom: 0;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
+
     color: var(--color-fondo);
-    background: var(--color-basico-f75);
+    background: var(--color-basico-f25);
     .cabecero {
       justify-content: flex-start;
       span {
@@ -824,10 +831,15 @@ button {
       margin-bottom: 30px;
       font-family: 'Raleway';
     }
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
   }
-  &>.crecer {
+  &>.contenido {
     flex-grow: 1;
+    background: var(--color-tinta-f5);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 750px;
+    width: 100%;
   }
-
 }
