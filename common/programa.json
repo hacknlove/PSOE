@@ -10,5 +10,24 @@
     "ADMINISTRACION EFICIENTE",
     "MADRID INTERNACIONAL",
     "MULTIPLES MUNICIPIOS"
+  ],
+  "secciones": [
+    "democracia",
+    "igualdad",
+    "economia",
+    "comunidad",
+    "cultura",
+    "conocimiento",
+    "servicios",
+    "administracion",
+    "internacional",
+    "municipios"
+  ],
+  "democracia": [
+    {
+      "titulo": "Aqui va el titulo",
+      "descripcion": "Aqui la breve descripcion",
+      "video": "O6JxZxIzRGc"
+    }
   ]
 }
