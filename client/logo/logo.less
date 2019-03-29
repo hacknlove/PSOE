@@ -1,0 +1,36 @@
+#logo {
+  padding: 50px;
+  background: #c10000;
+  animation-name: hueRotate;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  max-width: calc(100% - 40px);
+  img {
+    max-width: 100%;
+  }
+}
+@keyframes hueRotate {
+  0% {
+    opacity: 0;
+    filter: brightness(0) saturate(0) blur(50px);
+    transform: scale(1);
+  }
+  12% {
+    opacity: 1;
+    filter: brightness(0) saturate(0) blur(0);
+  }
+  45% {
+    opacity: 1;
+    filter: brightness(1) saturate(1)  blur(0);
+  }
+  60% {
+    opacity: 1;
+    filter: brightness(1) saturate(1) blur(0);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    filter: brightness(1) saturate(1) blur(100px);
+  }
+}

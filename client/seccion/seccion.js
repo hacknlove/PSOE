@@ -1,12 +1,12 @@
-/* global location */
-
 import { Template } from 'meteor/templating'
 import { ventanas } from 'meteor/hacknlove:ventanas'
-import datos from '/common/programa.json'
-import UrlPaterrn from 'url-pattern'
+import { Meteor } from 'meteor/meteor'
+const datos = Meteor.settings.public.programa
 
 Template.seccion.onCreated(function () {
   ventanas.conf('path', `/${this.data.seccion}`)
+  ventanas.close('portada')
+  ventanas.close('propuesta')
 })
 
 Template.seccion.helpers({
@@ -14,19 +14,11 @@ Template.seccion.helpers({
     return datos.menu[this.seccion]
   },
   propuestas () {
-    return datos[this.seccion]
+    const seccion = datos[this.seccion]
+    return Object.keys(seccion).map(e => ({
+      seccion: this.seccion,
+      propuesta: e,
+      vistaPrevia: seccion[e].vistaPrevia
+    }))
   }
 })
-const encontrarSeccion = function encontrarSeccion (path) {
-  const seccion = (new UrlPaterrn('/:seccion(/)')).match(path)
-  if (!seccion) {
-    return
-  }
-
-  if (!datos.menu[seccion.seccion]) {
-    return
-  }
-  console.log(seccion.seccion)
-  ventanas.conf('seccion', seccion.seccion)
-}
-encontrarSeccion(location.pathname)

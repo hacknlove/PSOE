@@ -1,0 +1,54 @@
+<template name="propuesta">
+
+  <div class="fade lista propuesta">
+    <div class="ribbon ventana">
+      <div class="cabecero">
+        <span>
+          <img class="close openWindow" data-_id="portada" src="/PSOECORAZON.png">
+          <span class="close openWindow" data-_id="seccion" data-seccion="{{seccion}}"> {{titulo}}</span>
+        </span>
+        <i class="fas fa-bars openWindow" data-_id="menu"></i>
+      </div>
+    </div>
+      <div class="contenido">
+        <div class="ventana vistaPrevia">
+          <div class="cabecero">
+            {{propuesta.vistaPrevia.titulo}}
+          </div>
+          <div class="propuesta">
+            <div>
+              <h4>{{propuesta.situacion.titulo}}</h4>
+              <div class="texto">
+                {{{propuesta.situacion.descripcion}}}
+              </div>
+              {{> youtube video=propuesta.situacion.video}}
+            </div>
+            <div>
+              <h4>{{propuesta.propuesta.titulo}}</h4>
+              <div class="texto">
+                {{{propuesta.propuesta.descripcion}}}
+              </div>
+              {{> youtube video=propuesta.propuesta.video}}
+            </div>
+            <div>
+              <h4>{{propuesta.impacto.titulo}}</h4>
+              <div class="texto">
+                {{{propuesta.impacto.descripcion}}}
+              </div>
+              {{> youtube video=propuesta.impacto.video}}
+            </div>
+          </div>
+          <div class="botonera">
+          </div>
+        </div>
+
+      </div>
+    <div class="crecer"></div>
+    <div class="ribbon ventana crecer">
+      <div class="botonera">
+        <button><i class="fas fa-envelope"></i> Contacto</button>
+        <button class="openWindow" data-_id="menuCompartir" data-directo="1"><i class="fas fa-share-alt"></i> Compartir</button>
+      </div>
+    </div>
+  </div>
+</template>

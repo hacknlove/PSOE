@@ -1,21 +1,68 @@
 <template name="menu">
-  <div class="fade lista">
-    <div class="ribbon ventana">
-      <div class="cabecero">
-        <img class="close openWindow" data-_id="portada" src="/PSOECORAZON.png">
-        <i class="fas fa-share-alt"></i>
-      </div>
+  <div class="fondo fondoDeMenu fade close"></div>
+  <div class="menu fade close">
+    {{#if volver}}
+      <div class="close openWindow" data-_id="{{volver._id}}" data-seccion="{{volver.seccion}}"><i class="fas fa-arrow-left"></i>{{volver.aDonde}}</div>
+    {{/if}}
+    <div class="close openWindow" data-_id="menuCompartir"><i class="fas fa-share-alt"></i>Compartir</div>
+    <div class="close openWindow" data-_id="contacto"><i class="fas fa-envelope"></i>Contacto</div>
+    <div class="close openWindow" data-_id="menuInformacion"><i class="fas fa-info"></i>más información</div>
+  </div>
+</template>
+
+<template name="menuInformacion">
+  <div class="fondo fondoDeMenu fade close"></div>
+  <div class="menu fade close">
+    {{#unless directo}}
+      <div class="close openWindow" data-_id="menu"><i class="fas fa-arrow-left"></i>Menu</div>
+    {{/unless}}
+    <div class="close link" data-href="{{URLS.facebook}}"><i class="fab fa-facebook-f"></i>facebook</div>
+    <div class="close link" data-href="{{URLS.twitter}}"><i class="fab fa-twitter"></i>twitter</div>
+    <div class="close link" data-href="{{URLS.youtube}}"><i class="fab fa-youtube"></i>youtube</div>
+    <div class="close link" data-href="{{URLS.instagram}}"><i class="fab fa-instagram"></i>Instagram</div>
+    <div class="close link" data-href="{{URLS.web}}"><i class="fas fa-home"></i>Web</div>
+    <div class="close link" data-href="{{URLS.programa}}"><i class="fas fa-file-alt"></i>ver Programa</div>
+  </div>
+</template>
+
+<template name="menuCompartir">
+  <div class="fondo fondoDeMenu fade close"></div>
+  <div class="menu fade">
+    {{#unless directo}}
+      <div class="close openWindow" data-_id="menu"><i class="fas fa-arrow-left"></i>Menu</div>
+    {{/unless}}
+    <div class="js-compartir" data-type="facebook">
+      <i class="fab fa-facebook-f"></i>
+      Facebook
     </div>
-      <div class="contenido botoneraVertical">
-          {{#each elemento in menu}}
-          <button class="close openWindow" data-_id="seccion" data-seccion="{{elemento.seccion}}">{{elemento.titulo}}</button>
-          {{/each}}
-      </div>
-    <div class="crecer"></div>
-    <div class="ribbon ventana crecer">
-      <div class="botonera">
-        {{datos.secciones.[0]}}
-      </div>
+    <div class="js-compartir" data-type="twitter">
+      <i class="fab fa-twitter"></i>
+      Twitter
+    </div>
+    <div class="js-compartir" data-type="whatsapp">
+      <i class="fab fa-whatsapp"></i>
+      Whatsapp
+    </div>
+    <div class="js-compartir" data-type="telegram">
+      <i class="fab fa-telegram-plane"></i>
+      Telegram
+    </div>
+    <div class="js-compartir" data-type="linkedin">
+      <i class="fab fa-linkedin-in"></i>
+      LinkedIn
+    </div>
+    <div class="js-compartir" data-type="skype">
+      <i class="fab fa-skype" ></i>
+      Skype
+    </div>
+    <div class="js-compartir" data-type="gmail">
+      <i class="fab fa-google"></i>
+      gmail
+    </div>
+    <div class="js-copiar">
+      <i class="fas fa-copy"></i>
+      Copiar url
     </div>
   </div>
+
 </template>

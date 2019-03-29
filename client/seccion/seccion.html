@@ -3,9 +3,9 @@
     <div class="ribbon ventana">
       <div class="cabecero">
         <span>
-          <img class="close openWindow" data-_id="menu" src="/PSOECORAZON.png"> <span> {{titulo}}</span>
+          <img class="close openWindow" data-_id="portada" src="/PSOECORAZON.png"> <span> {{titulo}}</span>
         </span>
-        <i class="fas fa-share-alt"></i>
+        <i class="fas fa-bars openWindow" data-_id="menu"></i>
       </div>
     </div>
       <div class="contenido botoneraVertical">
@@ -14,9 +14,10 @@
           {{/each}}
       </div>
     <div class="crecer"></div>
-    <div class="ribbon ventana crecer">
+    <div class="ribbon ventana">
       <div class="botonera">
-        https://github.com/hacknlove/PSOE
+        <button><i class="fas fa-envelope"></i> Contacto</button>
+        <button class="openWindow" data-_id="menuCompartir" data-directo="1"><i class="fas fa-share-alt"></i> Compartir</button>
       </div>
     </div>
   </div>
@@ -26,13 +27,15 @@
   <div class="ventana vistaPrevia">
     <div class="cabecero">
       {{vistaPrevia.titulo}}
+      <i class="fas fa-share-alt openWindow" data-_id="menuCompartir" data-pathname="/{{seccion}}/{{propuesta}}" data-directo="1"></i>
     </div>
     <div class="cuerpo">
-      <div class="youtube">
-        <iframe src="https://www.youtube.com/embed/O6JxZxIzRGc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      {{> youtube video=vistaPrevia.video}}
       <div class="descripcion">
-        {{{vistaPrevia.descripcion}}}
+        <div class="texto">
+          {{{vistaPrevia.descripcion}}}
+        </div>
+        <button class="close openWindow" data-_id="propuesta" data-propuesta="{{propuesta}}" data-seccion="{{seccion}}">Detalles</button>
       </div>
     </div>
   </div>

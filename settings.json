@@ -1,0 +1,216 @@
+{
+  "public": {
+    "programa": {
+      "menu": {
+        "democracia": "CALIDAD DEMOCRTATICA",
+        "igualdad": "IGUALDAD EN LA DIVERSIDAD",
+        "economia": "ECONOMIA Y BIENESTAR",
+        "comunidad": "UNA COMUNIDAD HABITABLE",
+        "cultura": "CULTURA COMO COHESIÓN",
+        "conocimiento": "MADRID DEL CONOCIMIENTO",
+        "servicios": "SERVICIOS PUBLICOS",
+        "administracion": "ADMINISTRACION EFICIENTE",
+        "internacional": "MADRID INTERNACIONAL",
+        "municipios": "MULTIPLES MUNICIPIOS"
+      },
+      "secciones": {
+        "democracia": "Descripción de la sección",
+        "igualdad": "Descripción de la sección",
+        "economia": "Descripción de la sección",
+        "comunidad": "Descripción de la sección",
+        "cultura": "Descripción de la sección",
+        "conocimiento": "Descripción de la sección",
+        "servicios": "Descripción de la sección",
+        "administracion": "Descripción de la sección",
+        "internacional": "Descripción de la sección",
+        "municipios": "Descripción de la sección"
+      },
+      "democracia": {
+        "propuesta1": {
+          "vistaPrevia": {
+            "titulo": "Una propuesta",
+            "descripcion": "Su descripcion",
+            "video": "1x48_N16vrY"
+          },
+          "situacion": {
+            "titulo": "Otra propuesta",
+            "descripcion": "con su descripcion diferente",
+            "video": "PzbR3dULzaI"
+          },
+          "propuesta": {
+            "titulo": "otra más",
+            "descripcion": "con otra descripcion",
+            "video": "gi4GlAj5E1w"
+          },
+          "impacto": {
+            "titulo": "otro titulo más",
+            "descripcion": "y otra descripcion",
+            "video": "VBi23tHUj3Y"
+          }
+        },
+        "propuesta2": {
+          "vistaPrevia": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "PzbR3dULzaI"
+          },
+          "situacion": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "gi4GlAj5E1w"
+          },
+          "propuesta": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "VBi23tHUj3Y"
+          },
+          "impacto": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "1x48_N16vrY"
+          }
+        },
+        "propuesta3": {
+          "vistaPrevia": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "gi4GlAj5E1w"
+          },
+          "situacion": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "VBi23tHUj3Y"
+          },
+          "propuesta": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "PzbR3dULzaI"
+          },
+          "impacto": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "1x48_N16vrY"
+          }
+        },
+        "propuesta4": {
+          "vistaPrevia": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "situacion": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "propuesta": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "impacto": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          }
+        },
+        "propuesta5": {
+          "vistaPrevia": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "situacion": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "propuesta": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "impacto": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          }
+        },
+        "propuesta6": {
+          "vistaPrevia": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "situacion": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "propuesta": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "impacto": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          }
+        },
+        "propuesta7": {
+          "vistaPrevia": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "situacion": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "propuesta": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "impacto": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          }
+        },
+        "propuesta8": {
+          "vistaPrevia": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "situacion": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "propuesta": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          },
+          "impacto": {
+            "titulo": "Aqui va el titulo",
+            "descripcion": "Aqui la breve descripcion",
+            "video": "O6JxZxIzRGc"
+          }
+        }
+      }
+    },
+    "URLS": {
+      "facebook": "https://www.facebook.com/PSOEMadrid/",
+      "twitter": "https://twitter.com/psoe_m",
+      "youtube": "https://www.youtube.com/channel/UCmPdl5P85T62iAGRgrU5EWw",
+      "instagram": "https://www.instagram.com/psoemadrid/",
+      "web": "https://www.psoemadrid.es/",
+      "programa": "/programa2015.pdf"
+    }
+  }
+}

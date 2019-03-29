@@ -1,11 +1,12 @@
 {
   "name": "PSOE",
   "scripts": {
-    "start": "meteor run",
-    "visualize": "meteor --production --extra-packages bundle-visualizer"
+    "start": "meteor run --settings settings.json",
+    "build": "bash .build/build.sh RC.sh"
   },
   "dependencies": {
     "@babel/runtime": "^7.1.5",
+    "clipboard": "^2.0.4",
     "meteor-node-stubs": "^0.4.1",
     "url-pattern": "^1.0.3"
   }

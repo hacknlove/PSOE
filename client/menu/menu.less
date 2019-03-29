@@ -1,25 +1,108 @@
-.ribbon {
-  .cabecero {
-    img {
-      height: 20px;
-      margin-right: 10px;
-    }
-  }
+.fondoDeMenu.fade {
+  z-index: 1003;
 }
-.botoneraVertical {
+.menu.fade {
+   font-family: var(--etiquetas), sans-serif ;
+  z-index: 1003;
+  transition: opacity .3s ease-out, right .3s;
+
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
-  box-sizing: border-box;
-  align-items: center;
-  button {
-    width: 100%;
-    max-width: 300px;
+   background: var(--color-basico);
+  &>div {
+    position: relative;
+    left: 0;
+    margin: 10px;
+    transition:
+      left .3s ease-out,
+      transform .3s ease-out,
+      background .3s ease-out,
+      color .3s ease-out;
+    cursor: pointer;
+    display: flex;
+    i {
+      margin-right: 10px;
+    }
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 110%;
+    @media (max-width: 500px) {
+      // font-size: 120%;
+      max-width: 300px;
+    }
+    text-align: center;
+     background: var(--color-basico);
+     color: var(--color-fondo);
+    @media (hover: hover) {
+      &:hover{
+         background: var(--color-basico-l1);
+        span {
+           background: var(--color-basico-l1);
+        }
+      }
+    }
+    &:active {
+       background: var(--color-basico-l25);
+    }
+    &.activo {
+       background: var(--color-basico-l25);
+    }
+    span {
+      transition:
+        right .3s ease-out,
+        transform .3s ease-out,
+        background .3s ease-out,
+        color .3s ease-out,
+        padding-right .3s ease-out;
+      position: absolute;
+      font-size: 70%;
+      opacity: 1;
+      right: 210px;
+      top: 0;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+       background: var(--color-basico);
+      z-index: 1;
+    }
+    span+i {
+      transition: left .3s ease-out, font-size .3s ease-out;
+      font-size: 75%;
+      position: relative;
+      left: 20px;
+    }
   }
-  &::after, &::before {
-    content: 'firefox';
-    opacity: 0;
-    display: block;
-    height: 30px;
+  &.invisible:not(.visible) {
+    pointer-events: none;
+    right: -225px;
+    &>div {
+      span {
+         background: var(--color-basico);
+        right: 215px;
+        padding-right: 15px;
+      }
+      span+i {
+        z-index: 2;
+        font-size: 100%;
+        left: 0px;
+      }
+    }
+
+  }
+  hr {
+    margin: 0;
+    border-color: var(--color-basico-l25);
+    border-style: solid;
   }
 }

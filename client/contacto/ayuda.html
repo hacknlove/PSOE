@@ -1,0 +1,22 @@
+<template name="contacto">
+  <div class="fondo fade close"></div>
+  <form class="ventana fade">
+    <div class="cabecero">
+      Contacto:
+      <i class="fas fa-times close click"></i>
+    </div>
+    <div class="cuerpo">
+      <p>Madrid necesita que nos digas que necesita Madrid</p>
+      <textarea name="contacto" rows="12" placeholder="Esperamos tu ayuda y prometemos contestar si incluyes una forma de contacto." data-validacion="vacio"></textarea>
+      <div class="errores">
+        <p class="vacio">
+          No has escrito nada.
+        </p>
+      </div>
+    </div>
+    <div class="botonera">
+      <button type="button" class="close click secundario">Cancelar</button>
+      <button class="click">Envíar</button>
+    </div>
+  </form>
+</template>

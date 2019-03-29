@@ -1,24 +1,19 @@
-import { ventanas } from 'meteor/hacknlove:ventanas'
 import { Template } from 'meteor/templating'
+import { ventanas } from 'meteor/hacknlove:ventanas'
+import { Meteor } from 'meteor/meteor'
+const datos = Meteor.settings.public.programa
 
-ventanas.upsert({
-  _id: 'portada'
-}, {
-  $inc: {
-    times: 1
-  }
+Template.portada.onCreated(function () {
+  ventanas.conf('path', '/')
+  ventanas.close('seccion')
+  ventanas.close('propuesta')
 })
-ventanas.updateUrl()
 
-Template.portada.events({
-  'animationend #logo' () {
-    ventanas.close('portada')
-    if (ventanas.conf('seccion')) {
-      return ventanas.insert({
-        _id: 'seccion',
-        seccion: ventanas.conf('seccion')
-      })
-    }
-    ventanas.insert({ _id: 'menu' })
+Template.portada.helpers({
+  portada () {
+    return Object.keys(datos.menu).map(e => ({
+      seccion: e,
+      titulo: datos.menu[e]
+    }))
   }
 })

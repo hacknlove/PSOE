@@ -1,0 +1,57 @@
+#ventanas {
+  .lista.propuesta {
+    width: 100vw;
+    max-width: none;
+    div.ribbon.ventana {
+      max-width: none;
+    }
+  }
+  .lista.propuesta .contenido {
+    width: 100%;
+    max-width: none;
+    background: var(--color-fondo);
+    .ventana {
+      background: transparent;
+      box-shadow: none;
+      width: 100%;
+      max-width: 100%;
+      .propuesta {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: 930px) {
+          grid-template-columns: 1fr;
+        }
+        padding: 0 10px;
+        &>div {
+          margin: 0 10px;
+          display: grid;
+          grid-template-areas: "titulo" "youtube" "texto";
+          @media (max-width: 930px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 20px auto;
+            .texto {
+              margin-top: 0;
+            }
+            grid-template-areas: "youtube titulo" "youtube texto";
+            margin: 10px 10px;
+          }
+          @media (max-width: 500px) {
+            grid-template-areas: "titulo" "youtube" "texto";
+            grid-template-columns: 1fr;
+          }
+          h4 {
+            grid-area: titulo;
+            margin: 0;
+          }
+          .texto {
+            grid-area: texto;
+          }
+          .youtube {
+            grid-area: youtube;
+          }
+        }
+      }
+    }
+  }
+
+}

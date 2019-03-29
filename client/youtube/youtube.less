@@ -1,0 +1,47 @@
+.youtube {
+  padding-top: 56.25%;
+  position: relative;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .play {
+      padding: 10px;
+      cursor: pointer;
+      background: var(--color-tinta-f5);
+      transition: background .3s;
+      &:hover {
+        background: var(--color-basico);
+      }
+      img {
+        height: 20px;
+      }
+      i {
+        margin-right: 10px;
+        color: white;
+        font-size: 25px;
+      }
+
+    }
+  }
+}
+.youtube+div {
+  display: flex;
+  flex-direction: column;
+  button {
+    margin: 0;
+  }
+}

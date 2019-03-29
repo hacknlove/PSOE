@@ -1,36 +1,25 @@
-#logo {
-  padding: 50px;
-  background: #c10000;
-  animation-name: hueRotate;
-  animation-fill-mode: forwards;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  max-width: calc(100% - 40px);
-  img {
-    max-width: 100%;
+.ribbon {
+  .cabecero {
+    img {
+      height: 20px;
+      margin-right: 10px;
+    }
   }
 }
-@keyframes hueRotate {
-  0% {
+.botoneraVertical {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  box-sizing: border-box;
+  align-items: center;
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+  &::after, &::before {
+    content: 'firefox';
     opacity: 0;
-    filter: brightness(0) saturate(0) blur(50px);
-    transform: scale(1);
-  }
-  12% {
-    opacity: 1;
-    filter: brightness(0) saturate(0) blur(0);
-  }
-  45% {
-    opacity: 1;
-    filter: brightness(1) saturate(1)  blur(0);
-  }
-  60% {
-    opacity: 1;
-    filter: brightness(1) saturate(1) blur(0);
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    filter: brightness(1) saturate(1) blur(100px);
+    display: block;
+    height: 30px;
   }
 }
